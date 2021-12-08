@@ -1,0 +1,74 @@
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:max-content;
+	position: relative;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+	cursor:pointer;
+}
+.item.featured{flex:7 1 0% !important;}
+
+.gallery-wrap .item.active{
+	flex: 5;
+}
+.slider-text-inner {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    bottom: 0;
+    margin: auto;
+    height: max-content;
+	transition: all 0.8s ease;
+	width: 50%;
+z-index: 1;
+}
+.head_one_txt{
+	font-weight:bold;
+    font-style: normal;
+    font-size: 16px;
+	color:#fff;
+	font-family: 'Lato', sans-serif;
+	margin-bottom:0px;
+}
+.head_two_txt{
+	font-family: 'Monument Extended';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+	color:#fff;
+	margin-bottom:0px;
+}
+.head_three_txt{
+	font-weight:500;
+    font-style: normal;
+    font-size: 18px;
+	color:#fff;
+	font-family: 'Lato', sans-serif;
+	margin-bottom:30px;
+}
+.cta-dicover a{
+	font-family: 'Monument Extended';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+	color:#fff;
+	padding:8px 15px;
+	border:1px solid #fff;
+	text-decoration:none;
+}
+
+
+.gallery-wrap.mobile-slider .item {
+    width: 100% !important;
+    display: block !important;
+    flex: none !important;
+    background-size: cover;
+}
